@@ -1,0 +1,113 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2022.3">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Users\Envy\Downloads\Sumary After Cleaningdata.yxdb</File>
+          <FormatSpecificOptions />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Sumary After Cleaningdata.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="City" size="254" source="Summarize: GroupBy - City" type="V_String" />
+            <Field name="Total Pawdacity Sales" source="Summarize: Sum - Value" type="Int64" />
+            <Field description="TextToColumns: Parsed from 2010 Census" name="2010_Census_Population" source="Formula: ReplaceChar([2010 Census3],&quot;,&quot;,&quot;&quot;)" type="Double" />
+            <Field name="Land_Area" source="File: E:\Predictive Analytics for Business\Predictive Analytics for Business ME\Project01\project1-3\Projec03-1\p2-files\p2-wy-demographic-data.csv" type="Float" />
+            <Field name="Household_with_Under_18" source="File: E:\Predictive Analytics for Business\Predictive Analytics for Business ME\Project01\project1-3\Projec03-1\p2-files\p2-wy-demographic-data.csv" type="Int64" />
+            <Field name="Population_Density" source="File: E:\Predictive Analytics for Business\Predictive Analytics for Business ME\Project01\project1-3\Projec03-1\p2-files\p2-wy-demographic-data.csv" type="Double" />
+            <Field name="Total_Families" source="File: E:\Predictive Analytics for Business\Predictive Analytics for Business ME\Project01\project1-3\Projec03-1\p2-files\p2-wy-demographic-data.csv" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="186" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Envy\AppData\Local\Temp\Engine_15668_a88a86dac4478c4095aaeebfec1733a1_\Engine_15668_ff0a3f40cbb05141a1f24380488fb4ad~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>New Workflow5_Autosave</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="3b1e0e91-0a03-4303-ac72-1c498688d4a6" />
+      <Telemetry>
+        <PreviousWorkflowId value="9f609b19-5849-4d3f-a924-dde1d4c72cd8" />
+        <OriginWorkflowId value="9f609b19-5849-4d3f-a924-dde1d4c72cd8" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
